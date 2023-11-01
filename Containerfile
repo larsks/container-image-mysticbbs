@@ -1,5 +1,7 @@
 FROM debian:bookworm
 
+ARG MYSTIC_INSTALLER_URL=https://mysticbbs.com/downloads/mys112a48_p32.zip
+
 RUN ln -s ld-linux-armhf.so.3 /lib/ld-linux.so.3
 
 RUN apt-get update && \
