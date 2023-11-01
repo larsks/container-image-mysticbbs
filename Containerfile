@@ -26,5 +26,5 @@ VOLUME /data
 
 COPY container-entrypoint.sh /usr/local/bin/
 COPY run-mystic.sh /usr/local/bin/
-ENTRYPOINT ["sh", "/usr/local/bin/container-entrypoint.sh"]
-CMD ["sh", "/usr/local/bin/run-mystic.sh"]
+ENTRYPOINT ["bash", "/usr/local/bin/container-entrypoint.sh"]
+CMD ["bash", "/usr/local/bin/run-mystic.sh"]

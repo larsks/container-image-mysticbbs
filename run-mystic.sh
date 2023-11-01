@@ -11,7 +11,9 @@ fi
 
 ./mis daemon
 
+trap "echo 'Requesting shutdown'; ./mis shutdown" SIGINT SIGTERM
+
 # just hang around waiting for mystic to exit
 while [ -f "$MBBS_RUNNING_SEMAPHORE" ]; do
-	sleep 1
+	(trap "" SIGINT SIGTERM; sleep 1)
 done
