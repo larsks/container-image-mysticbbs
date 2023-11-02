@@ -10,6 +10,7 @@ RUN apt-get update && \
 		unzip \
 		procps \
 		iproute2 \
+		neovim \
 	&& \
 	apt-get clean
 
