@@ -13,6 +13,7 @@ RUN apt-get update && \
 		neovim \
 		ax25-tools \
 		libax25 \
+		telnet \
 	&& \
 	apt-get clean
 
