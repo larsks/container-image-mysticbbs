@@ -11,6 +11,8 @@ RUN apt-get update && \
 		procps \
 		iproute2 \
 		neovim \
+		ax25-tools \
+		libax25 \
 	&& \
 	apt-get clean
 
